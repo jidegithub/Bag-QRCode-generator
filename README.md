@@ -1,1 +1,1 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6bc0065f-9588-4fba-a3d1-0315d07db8df/deploy-status)](https://app.netlify.com/sites/warehouse-address-qrgenerator/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e0948114-68eb-431d-8afa-a272b7970c0f/deploy-status)](https://app.netlify.com/sites/unruffled-mcnulty-e25023/deploys)
