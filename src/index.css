@@ -24,8 +24,8 @@ body {
 .select-boxes{
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   margin: 2rem 0;
-
 }
 
 form {
@@ -59,7 +59,7 @@ p::before {
 input.form-control  {
   display: block;
   box-sizing: border-box;
-  width: 90%;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid white;
   padding: 10px 15px;
@@ -124,13 +124,12 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
-.custom-select {
+/* .custom-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   height: 35px;
   padding: 10px 16px;
-  /* background: #fff url("select-arrows.svg") no-repeat right 16px center; */
   background-size: 10px;
   transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
   border: 1px solid #ddd;
@@ -143,7 +142,7 @@ input[type="submit"] {
   border: 1px solid #999;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
   outline: none;
-}
+} */
 /* remove default arrow in IE */
 select::-ms-expand {
   display:none;
@@ -195,6 +194,10 @@ select::-ms-expand {
   transform: rotate(45deg);
 }
 
+h3.form-label{
+  color: whitesmoke;
+}
+
 .qr-code-container{
   display: flex;
   flex-wrap: wrap;
@@ -202,9 +205,17 @@ select::-ms-expand {
   margin: 1rem 0;
 }
 
+canvas#qrCodeEl{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .qr-code-box{
+  display: flex;
+  flex-direction: column;
   background-color: white;
   margin-bottom: 1.5rem;
+  padding:0 0 2rem 0;
 }
 .qr-code-box > h1 {
   display: flex;
@@ -227,3 +238,6 @@ select::-ms-expand {
   /* line-height: 10px; */
 }}
 
+@media screen {
+  
+}

@@ -1,22 +1,25 @@
-import React from 'react'
+import Select from 'react-select'
+
+export type OptionType = {
+  value: string
+  label: string
+  type: string
+  code: string
+};
 
 type selectProps = {
-  options: string[],
-  onSelect: (event: React.ChangeEvent<HTMLSelectElement>) => void
+  options: any[]
+  title: string
   name: string
+  selected?: string
+  onSelect?: any
 }
 
-export default function SelectInput({options, onSelect, name}: selectProps) {
+export default function SelectInput({options, title, name, selected, onSelect}: selectProps) {
   return (
     <div>
-      <select name={name} onChange={onSelect} className="custom-select">
-        <option defaultValue="none" disabled>select one</option>
-        {options.map((value, key) => (
-          <option value={value} key={key}>
-            {value}
-          </option>
-        ))}
-      </select>
+      <h3 className='form-label'>{title}</h3>
+      <Select options={options} name={name} value={selected} onChange={(select) => onSelect(select)} />
     </div>
   )
 }
