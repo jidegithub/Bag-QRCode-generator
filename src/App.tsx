@@ -139,10 +139,10 @@ function App() {
   }
 
   const bagOptions = [
-    { value: "40", label: "40MT", type: "bags"},
-    { value: "50", label: "50MT", type: "bags"},
-    { value: "60", label: "60MT", type: "bags"},
-    { value: "85", label: "85MT", type: "bags"},
+    { value: "40", label: "40KG", type: "bags"},
+    { value: "50", label: "50KG", type: "bags"},
+    { value: "60", label: "60KG", type: "bags"},
+    { value: "85", label: "85KG", type: "bags"},
   ]
 
   const warehouseLocations = [
