@@ -155,7 +155,8 @@ function App() {
 
   const products = [
     {value: "GINGER", label: "DSGR-GINGER", code: "DSGR", type: "products"},
-    {value: "MAIZE", label: "MZE-MAIZE", code: "MZE", type: "products"}
+    {value: "MAIZE", label: "MZE-MAIZE", code: "MZE", type: "products"},
+    {value: "SORGHUM", label: "SUM-SORGHUM", code: "SUM", type: "products"}
   ]
 
   return (
